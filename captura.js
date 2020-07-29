@@ -1,3 +1,4 @@
+
 function copiarHTML() {
   let copyText = document.getElementsByTagName("body")[0];
   let input = document.createElement("input");
@@ -21,4 +22,22 @@ function copiarHTML() {
   copyText.appendChild(textArea);
   }
 
- 
+  
+  
+
+
+function gravarSession(){
+  sessionStorage.setItem("notas", document.form.notas.value);
+  sessionStorage.setItem("titulo", document.form.titulo.value);
+  sessionStorage.setItem("origem", document.form.origem.value);
+  sessionStorage.setItem("regiao", document.form.regiao.value);
+  sessionStorage.setItem("safra", document.form.safra.value);
+  sessionStorage.setItem("temp", document.form.temp.value);
+  sessionStorage.setItem("uvas", document.form.uvas.value);
+  sessionStorage.setItem("teor", document.form.teor.value);
+  sessionStorage.setItem("amadurecimento", document.form.amadurecimento.value);
+  sessionStorage.setItem("tempguarda", document.form.tempguarda.value);
+  sessionStorage.setItem("harmonizacao", document.form.harmonizacao.value);
+  sessionStorage.setItem("vindima", document.form.vindima.value);
+ }
+
